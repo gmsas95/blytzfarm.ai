@@ -19,7 +19,7 @@ const openSans = Open_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Farm AI Control Center",
+  title: "Blytz Farm.Ai Control Center",
   description: "Advanced monitoring and control system for closed farm environments",
   generator: "v0.app",
 }
@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="h-full">
       <head>
         <style>{`
 html {
@@ -40,9 +40,9 @@ html {
 }
         `}</style>
       </head>
-      <body className={`${montserrat.variable} ${openSans.variable} antialiased`}>
+      <body className={`${montserrat.variable} ${openSans.variable} antialiased h-full`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          {children}
+          <div className="h-full w-full">{children}</div>
         </ThemeProvider>
       </body>
     </html>

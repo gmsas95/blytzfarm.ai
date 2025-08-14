@@ -3,7 +3,7 @@ import { ThemeToggle } from "@/components/theme-toggle"
 
 export default function LoginPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 flex items-center justify-center p-4">
+    <div className="h-screen w-full bg-gradient-to-br from-green-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 flex items-center justify-center p-4">
       <div className="absolute top-4 right-4">
         <ThemeToggle />
       </div>
@@ -20,7 +20,7 @@ export default function LoginPage() {
               />
             </svg>
           </div>
-          <h1 className="text-3xl font-black text-slate-800 dark:text-white font-sans">Farm AI Control Center</h1>
+          <h1 className="text-3xl font-black text-slate-800 dark:text-white font-sans">Blytz Farm.Ai Control Center</h1>
           <p className="text-slate-600 dark:text-slate-300 mt-2 font-sans">
             Monitor and control your closed farm environment
           </p>

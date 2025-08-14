@@ -60,12 +60,12 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
   ]
 
   if (!user) {
-    return <div className="flex items-center justify-center min-h-screen">Loading...</div>
+    return <div className="flex items-center justify-center h-screen w-full">Loading...</div>
   }
 
   return (
     <SidebarProvider>
-      <div className="flex min-h-screen bg-slate-50 dark:bg-slate-900">
+      <div className="flex h-screen w-full bg-slate-50 dark:bg-slate-900">
         <Sidebar className="border-r border-slate-200 dark:border-slate-700">
           <SidebarHeader className="border-b border-slate-200 dark:border-slate-700 p-4">
             <div className="flex items-center gap-3">
@@ -80,7 +80,7 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
                 </svg>
               </div>
               <div>
-                <h2 className="font-black text-sm font-sans">Farm AI</h2>
+                <h2 className="font-black text-sm font-sans">Blytz Farm.AI</h2>
                 <p className="text-xs text-muted-foreground font-sans">Control Center</p>
               </div>
             </div>
@@ -101,8 +101,8 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
           </SidebarContent>
         </Sidebar>
 
-        <div className="flex-1 flex flex-col">
-          <header className="bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 px-6 py-4">
+        <div className="flex-1 flex flex-col h-full overflow-hidden">
+          <header className="bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 px-6 py-4 flex-shrink-0">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-4">
                 <SidebarTrigger />
@@ -158,7 +158,7 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
             </div>
           </header>
 
-          <main className="flex-1 p-6">{children}</main>
+          <main className="flex-1 p-6 overflow-auto">{children}</main>
         </div>
       </div>
     </SidebarProvider>
