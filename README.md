@@ -1,5 +1,4 @@
-# Blytz Farm.Ai
-
+> ⚠️ **Archived — early prototype.** This was an early iteration of the Blytz Marketplace. Superseded by [blytz.app.go](https://github.com/gmsas95/blytz.app.go).\n\n
 *Automatically synced with your [v0.app](https://v0.app) deployments*
 
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/gmsas94s-projects/v0-blytz-farm-ai)
